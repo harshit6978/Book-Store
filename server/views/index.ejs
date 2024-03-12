@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <%- include(from.ejs)%>
+
+        BookName of <%=data.bookname%> are:<br />
+            BookPrice of <%=data.bookprice%>:
+                Description of <%=data.description%><br />
+
+                    <table border="1">
+                        <tr>
+                            <th>BookName</th>
+                            <td colspan="3">
+                                <%= data.bookname %>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Price</th>
+                            <td>
+                                <%= data.price %>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Description</th>
+                            <td>
+                                <%= data.Description %>
+                            </td>
+                        </tr>
+                    </table>
+</body>
+
+</html>
